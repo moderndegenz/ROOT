@@ -22,19 +22,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
           function callTFNLab() {
-            var urlString =  "gennft.jsp";
+            var urlString =  ;
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
               if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("status").innerHTML = "GEN";
               }
             };
-            xhttp.open("GET", urlString, true);
+            xhttp.open("GET", "gennft.jsp", true);
             xhttp.send();
           }
         </script>
     </head>
-    <body id="page-top">
+    <body id="page-top" onload="callTFNLab()">
 
         <a id="projectsmore" />
         <section class="projects-section bg-light" id="projects">
