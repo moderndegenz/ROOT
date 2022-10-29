@@ -7,7 +7,8 @@ Generating
   Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/pi/acc.py", "").start();
   String stderr = IOUtils.toString(pweb3.getErrorStream(), Charset.defaultCharset());
   String stdout = IOUtils.toString(pweb3.getInputStream(), Charset.defaultCharset());
+
  %>
 
 
- <%= "UUID " + uuid + stdout %>
+ <%= "UUID " + uuid + " " + stdout %>
