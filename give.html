@@ -28,9 +28,10 @@
                 document.getElementById("status").innerHTML = this.responseText;
               }
             };
+            var urlString = "gennft.jsp?walletid=" + document.getElementById("walletid").value
             document.getElementById("start").style.display="none";
             document.getElementById("status").innerHTML = "Started Avatar Generation";
-            xhttp.open("GET", "gennft.jsp", true);
+            xhttp.open("GET", urlString, true);
             xhttp.send();
           }
         </script>
@@ -65,7 +66,7 @@ Show NFT on opensea
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1">Transfer To</span>
                 </div>
-                <input type="text" class="form-control" placeholder="walletid" aria-label="Wallet Address" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" name="walletid" id="walletid" placeholder="walletid" aria-label="Wallet Address" aria-describedby="basic-addon1">
               </div>
 
               </div>
