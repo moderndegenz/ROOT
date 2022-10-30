@@ -28,8 +28,8 @@
                 document.getElementById("status").innerHTML = this.responseText;
               }
             };
-            document.getElementById("start").enable = false;
-            document.getElementById("status").innerHTML = "Started Avatar Generation";
+            document.getElementById("start").disabled = true;
+//            document.getElementById("status").innerHTML = "Started Avatar Generation";
             xhttp.open("GET", "gennft.jsp", true);
             xhttp.send();
           }
