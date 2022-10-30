@@ -28,6 +28,7 @@
                 document.getElementById("status").innerHTML = this.responseText;
               }
             };
+            document.getElementById("status").innerHTML = "Started Avatar Generation";
             xhttp.open("GET", "gennft.jsp", true);
             xhttp.send();
           }
@@ -52,13 +53,13 @@ Show NFT on opensea
 </p>
 <p>
 
-              <a class="btn btn-primary" href="#" onclick="callTFNLab()">Email</a>
+              <a class="btn btn-primary" href="#" onclick="callTFNLab()">Start</a>
               <a class="btn btn-primary" href="#">Email</a>
               <a class="btn btn-primary" href="#">PDF</a>
               <a class="btn btn-primary" href="#">Transfer</a>
               <a class="btn btn-primary" href="#">OpenSea</a>
             </p>
-              <div name="status" id="status" >Started Avatar Generation</div>
+              <div name="status" id="status" >Start Avatar Generation</div>
               <img src="assets/img/give.png" class="img-fluid" alt="Responsive image" />
             </div>
         </section>
