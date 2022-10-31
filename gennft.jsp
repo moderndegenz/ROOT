@@ -1,6 +1,6 @@
 <%@ page language="java" import="java.util.UUID,java.lang.Thread,org.apache.commons.io.IOUtils,org.apache.commons.io.output.*,java.nio.charset.Charset,java.io.*,java.util.*,java.awt.image.BufferedImage,javax.imageio.ImageIO,java.io.OutputStream,java.io.FileInputStream,java.io.File"%>
 
-Generating
+Avatar Finished
 
 <%
   UUID uuid = UUID.randomUUID();
@@ -10,7 +10,7 @@ Generating
 
  %>
 
-
+ <hr>
  <%= "UUID " + uuid + " " + stdout + " " +  request.getParameter("walletid")%>
  <hr>
  <a class="btn btn-primary" href="#" onclick="callCopy()" name="copy" id="copy" >Copy</a>
