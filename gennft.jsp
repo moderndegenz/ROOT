@@ -12,3 +12,5 @@ Generating
 
 
  <%= "UUID " + uuid + " " + stdout + " " +  request.getParameter("walletid")%>
+ <hr>
+ <a class="btn btn-primary" href="#" onclick="callCopy()" name="copy" id="copy" >Copy</a>
