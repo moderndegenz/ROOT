@@ -96,7 +96,7 @@ window.onload = function() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        var ressub = this.responseText.substring(this.responseText.indexOf("price"), this.responseText.length);
+        var ressub = this.responseText.substring(this.responseText.indexOf("price") + 8, this.responseText.length - 2);
         document.getElementById("data").innerHTML = ressub;
       }
     };
