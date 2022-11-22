@@ -103,21 +103,12 @@ window.onload = function() {
     xhttp.open("GET", urlString, true);
     xhttp.send();
   }
-
-  function callCopy() {
-    const el = document.createElement('textarea');
-    el.value =  document.getElementById("status").innerHTML;
-    el.setAttribute('readonly', '');
-    el.style.position = 'absolute';
-    el.style.left = '-9999px';
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
-    document.body.removeChild(el);
+  function bar() {
+    setTimeout(callTFNLab(), 2000)
   }
 </script>
 </head>
-<body id="home">
+<body id="home" onload="bar()">
 <!-- header area -->
     <header class="wrapper clearfix">
         <div id="banner">
