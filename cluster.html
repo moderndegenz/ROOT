@@ -91,6 +91,31 @@ window.onload = function() {
 </script>
 <!-- end of Inline JS-->
 <!-- end JS-->
+<script>
+  function callTFNLab() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("data").innerHTML = this.responseText;
+      }
+    };
+    var urlString = "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT";
+    xhttp.open("GET", urlString, true);
+    xhttp.send();
+  }
+
+  function callCopy() {
+    const el = document.createElement('textarea');
+    el.value =  document.getElementById("status").innerHTML;
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+  }
+</script>
 </head>
 <body id="home">
 <!-- header area -->
