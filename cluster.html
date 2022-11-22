@@ -92,6 +92,9 @@ window.onload = function() {
 <!-- end of Inline JS-->
 <!-- end JS-->
 <script>
+
+  setInterval(bar, 1000);
+
   function callTFNLab() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -109,7 +112,7 @@ window.onload = function() {
   }
 </script>
 </head>
-<body id="home" onload="bar()">
+<body id="home" >
 <!-- header area -->
     <header class="wrapper clearfix">
         <div id="banner">
