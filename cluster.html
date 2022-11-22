@@ -216,7 +216,7 @@ function displayHello() {
       document.getElementById('demoitem').innerHTML = parseInt(document.getElementById('demoitem').innerHTML) + 1;
       var ressub = this.responseText.substring(this.responseText.indexOf("price") + 8, this.responseText.length - 2);
       document.getElementById("datatwo").innerHTML = ressub;
-      document.getElementById('datatwo').innerHTML = document.getElementById('demo').innerHTML + "\n" +   document.getElementById('demoitem').innerHTML + ", " + ressub;
+      document.getElementById('datatwo').innerHTML = document.getElementById('datatwo').innerHTML + "\n" +   document.getElementById('demoitem').innerHTML + ", " + ressub;
     }
   };
   var urlString = "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT";
