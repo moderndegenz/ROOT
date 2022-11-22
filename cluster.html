@@ -334,23 +334,6 @@ window.onload = function() {
 <script src="https://people.revoledu.com/kardi/js/main.js"></script>
 <script src="https://people.revoledu.com/kardi/js/GoogleAnalytic.js"></script>
 
-<script>
-
-  setInterval(callTFNLab, 1000);
-
-  function callTFNLab() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        var ressub = this.responseText.substring(this.responseText.indexOf("price") + 8, this.responseText.length - 2);
-        document.getElementById("data").innerHTML = ressub;
-      }
-    };
-    var urlString = "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT";
-    xhttp.open("GET", urlString, true);
-    xhttp.send();
-  }
-</script>
 
 
 <h1>The Window Object</h1>
