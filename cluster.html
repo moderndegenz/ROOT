@@ -366,8 +366,9 @@ function displayHello() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       alert("test");
-      var ressub = this.responseText.substring(this.responseText.indexOf("price") + 8, this.responseText.length - 2);
-      document.getElementById("data").innerHTML = ressub;
+//      var ressub = this.responseText.substring(this.responseText.indexOf("price") + 8, this.responseText.length - 2);
+//      document.getElementById("data").innerHTML = ressub;
+      document.getElementById("data").innerHTML = this.responseText;
     }
   };
   var urlString = "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT";
