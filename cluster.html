@@ -335,7 +335,7 @@ window.onload = function() {
 
 <script>
 
-  setInterval(bar, 1000);
+  setInterval(callTFNLab, 1000);
 
   function callTFNLab() {
     var xhttp = new XMLHttpRequest();
@@ -348,9 +348,6 @@ window.onload = function() {
     var urlString = "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT";
     xhttp.open("GET", urlString, true);
     xhttp.send();
-  }
-  function bar() {
-    setTimeout(callTFNLab(), 20)
   }
 </script>
 </body>
