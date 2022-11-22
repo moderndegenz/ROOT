@@ -331,9 +331,9 @@ function displayHello() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       alert(this.responseText);
-//      var ressub = this.responseText.substring(this.responseText.indexOf("price") + 8, this.responseText.length - 2);
+      var ressub = this.responseText.substring(this.responseText.indexOf("price") + 8, this.responseText.length - 2);
 //      document.getElementById("data").innerHTML = ressub;
-      document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + "\n" + this.responseText;
+      document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + "\n" + ressub;
     }
   };
   var urlString = "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT";
@@ -357,8 +357,7 @@ function displayHello() {
 <script src="https://people.revoledu.com/kardi/js/main.js"></script>
 <script src="https://people.revoledu.com/kardi/js/GoogleAnalytic.js"></script>
 
-<textarea cols="40" id="data" rows="8">
-</textarea>
+<textarea cols="40" id="data" rows="8"></textarea>
 
 
 </body>
