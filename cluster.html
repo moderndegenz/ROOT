@@ -96,7 +96,8 @@ window.onload = function() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("data").innerHTML = this.responseText;
+        var ressub = this.responseText.substring(this.responseText.indexOf("price"), length.this.responseText);
+        document.getElementById("data").innerHTML = ressub;
       }
     };
     var urlString = "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT";
