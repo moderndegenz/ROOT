@@ -74,7 +74,7 @@
   </script>
 </head>
 
-<body>
+<body onload="displayImages()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -191,7 +191,15 @@
          <img src="47.png" />
          <img src="48.png" />
          <img src="49.png" />
-         <img src="50.png" />         
+         <img src="50.png" />
+
+         <script>
+           function displayImages() {
+             for (let i = 51; i <= 70; i++) {
+               document.write(`<img src="${i}.png" />`);
+             }
+           }
+         </script>
       </div>
 
     </section><!-- End Blog Section -->
