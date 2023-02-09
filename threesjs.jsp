@@ -1,6 +1,8 @@
 <html>
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/react-three-fiber@6.0.13/dist/react-three-fiber.cjs.min.js"></script>
+    <script src="https://unpkg.com/@mrdoob/three.js@0.119.0/build/three.fiber.min.js"></script>
+
+
   </head>
   <body>
     <div id="container"></div>
